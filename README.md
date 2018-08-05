@@ -6,8 +6,6 @@ The first section, "Concepts", is intended for a general audience. It covers map
 
 The "Technical Details" section explains the simplifying assumptions and lays out the Map-Reduce Demo app design.
 
-The third and fourth sections cover the two different implementations. My original 2016 implementation uses explicit threading and concurrent access data structures. The 2018 implementation uses a reactive approach and shows how much simpler concurrency is with reactive programming.  
-
 # Concepts #
 
 For decades computing power doubled about once every two years. To solve problems faster you got a faster computer. Back in 1965, Gordon Moore, an Intel executive, observed that the number of components doubled roughly every year. In 1975 he revised his estimate to once every two years. "Moore's law" described the relentless advance driving the computer revolution, upending life as humans knew it. More components in the same space meant they had to get smaller. Much smaller. Computer chip components are now only 10's of atoms wide sending costs through the roof. "Moore's Law" is ending. 
