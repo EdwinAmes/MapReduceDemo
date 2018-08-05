@@ -95,7 +95,7 @@ The word count example assumes a single document. The input key is the line # an
   
 The discussion of Moore's law ignored a few technical details. Components were doubling about every two years from 1975 until recently but performance doubled more like once every 18 months. Today's programmers deal with multi-core processors each supporting multiple threads. Logically I collapsed that detail into computers as in things capable of running independent calculations -- if we ignore thread switching and resource contention.
 
-The demo simplifies the implementation. It substitutes threads for machines. Since threads are reliable an explicit failure recovery mechanism is not required. The system can block until all lines are mapped before proceeding to the reduce stage for the final answer.
+The demos substitute threads for machines. Since threads are reliable an explicit failure recovery mechanism is not required. The system can block until all lines are mapped before proceeding to the reduce stage for the final answer.
 
 ![Activity Diagram Map Reduce Demo](https://i.imgur.com/IRHfwTZ.png)
 
