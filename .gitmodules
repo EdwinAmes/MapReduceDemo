@@ -1,0 +1,3 @@
+[submodule "MapReduceDemo_Concurrent"]
+	path = MapReduceDemo_Concurrent
+	url = https://github.com/NedAmes/MapReduceDemo_Concurrent
