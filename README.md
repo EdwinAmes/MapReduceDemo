@@ -13,7 +13,7 @@ For decades computing power doubled about once every two years. To solve problem
 When computers were no longer speeding up quickly enough programmers had to start using divide-and-conquer algorithms. Performance increased but at a price. Now instead of programming everything on one computer, programmers had to break problems into many pieces running on separate computers and then merge the results into the final answer.
 
 
-Let's say you're give the text:
+Let's say you're given the text:
 
 	The quick brown fox jumped over the lazy dog.
 	Petunias pickled under the noon sun.
