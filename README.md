@@ -25,7 +25,7 @@ and told to count the number of times each word occurs. Your list ends up lookin
 | the                                                                  | 3      |                                                        
 | brown,dog,fox,jumped,lazy,noon,over,petunias,pickled,quick,sun,under | 1 each |
 
-Each word is examined in turn one after another in order. If a computer uses this approach, faster counting requires a faster computer. 
+Each word is examined in turn one after another. If a computer uses this approach, faster counting requires a faster computer. 
 
 Turns our there's another way. Break the text into two lines:
 
