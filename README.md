@@ -85,7 +85,7 @@ A similar approach works for tracking who is combining the partial results into 
 
 # Technical Details #
 
-Time to get away from The Three Stooges&reg;. Let's start with the simplifying assumptions. 
+Time to get away from The Three Stooges&reg;. Let's start with the simplifying assumptions. Map-Reduce transforms Maps with keys not simple strings. The Moore's law discussion abstracted computer networks, chips, cores and threads into "computers" they separate concepts.
 
 Map-Reduce chunks input data and maps the chunks to a `Map<key,value>` whose keys are in the input domain. The **map** stage transforms each input map entry into intermediate map entries whose keys are in the solution domain. The **reduce** stage groups intermediate map entries by key and processes each group yielding 0, 1 or more result entries for each key. 
 
