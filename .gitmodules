@@ -1,0 +1,6 @@
+[submodule "MapReduceDemo_Observables"]
+	path = MapReduceDemo_Observables
+	url = https://github.com/NedAmes/MapReduceDemo_Observables
+[submodule "MapReduceDemo_Concurrent"]
+	path = MapReduceDemo_Concurrent
+	url = https://github.com/NedAmes/MapReduceDemo_Concurrent
