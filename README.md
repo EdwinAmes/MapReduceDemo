@@ -8,12 +8,12 @@ The "Technical Details" section explains the simplifying assumptions and lays ou
 
 # Concepts #
 
-For decades computing power doubled about once every two years. To solve problems faster you got a faster computer. Back in 1965, Gordon Moore, an Intel executive, observed that the number of components doubled roughly every year. In 1975 he revised his estimate to once every two years. "Moore's law" described the relentless advance driving the computer revolution, upending life as humans knew it. More components in the same space meant they had to get smaller. Much smaller. Computer chip components are now only 10's of atoms wide sending costs through the roof. "Moore's Law" is ending. 
+For decades computing power doubled about once every two years. To solve problems faster you got a faster computer. Back in 1965, Gordon Moore, an Intel executive, observed that the number of components doubled roughly every year. In 1975 he revised his estimate to once every two years. "Moore's law" described and defined the relentless advance driving the computer revolution, upending life as we knew it. For years the industry coordinated its efforts to keep Moore's law going, to get "More Moore". Today's chip designs are hitting fundamental limits: heat and quantum physics. Put more components in the same space and they must get smaller. Much smaller. Each component generates heat. Packing enough components together makes cooling too expensive. By the early 2020's computer chip components will hit ultimate limits, at 10 atoms wide they will belong to the uncertain world of quantum physics. "Moore's Law" is ending. 
 
 When computers were no longer speeding up quickly enough programmers had to start using divide-and-conquer algorithms. Performance increased but at a price. Now instead of programming everything on one computer, programmers had to break problems into many pieces running on separate computers and then merge the results into the final answer.
 
 
-Let's say you're give the text:
+Let's say you're given the text:
 
 	The quick brown fox jumped over the lazy dog.
 	Petunias pickled under the noon sun.
@@ -25,7 +25,7 @@ and told to count the number of times each word occurs. Your list ends up lookin
 | the                                                                  | 3      |                                                        
 | brown,dog,fox,jumped,lazy,noon,over,petunias,pickled,quick,sun,under | 1 each |
 
-Each word is examined in turn one after another in sequence. If a computer uses this approach, faster counting requires a faster computer. 
+Each word is examined in turn one after another. If a computer uses this approach, faster counting requires a faster computer. 
 
 Turns our there's another way. Break the text into two lines:
 
@@ -85,7 +85,7 @@ A similar approach works for tracking who is combining the partial results into 
 
 # Technical Details #
 
-Time to get away from The Three Stooges&reg;. Let's start with the simplifying assumptions. 
+Time to get away from The Three Stooges&reg;. Let's start with the simplifying assumptions. Map-Reduce transforms Maps with keys not simple strings. Reduce transformations do not always result in fewer elements in the output set. The Moore's law discussion abstracted computer networks, chips, cores and threads into "computers" they separate concepts.
 
 Map-Reduce chunks input data and maps the chunks to a `Map<key,value>` whose keys are in the input domain. The **map** stage transforms each input map entry into intermediate map entries whose keys are in the solution domain. The **reduce** stage groups intermediate map entries by key and processes each group yielding 0, 1 or more result entries for each key. 
 
